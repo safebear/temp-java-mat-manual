@@ -1,0 +1,33 @@
+{
+  "name": "temp-java-mat-manual",
+  "version": "1.0.0",
+  "description": "Safebear Test Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safebear/temp-java-mat-manual.git"
+  },
+  "author": "Simon Stratton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safebear/temp-java-mat-manual/issues"
+  },
+  "homepage": "https://github.com/safebear/temp-java-mat-manual#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "eslint": "^5.14.1",
+    "eslint-plugin-chai-expect": "^2.0.1",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-cucumber": "^1.2.0",
+    "eslint-plugin-protractor": "^1.41.1",
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.1.1",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.0"
+  },
+  "dependencies": {}
+}
