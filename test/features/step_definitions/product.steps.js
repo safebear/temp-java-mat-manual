@@ -8,6 +8,7 @@ const { Given, When, Then, Before } = require('cucumber');
 const chai = require('chai');  
 const expect = chai.expect; 
 const chaiAsPromised = require("chai-as-promised");
+chai.use(chaiAsPromised);
 
 setWorldConstructor(CustomWorld);
 
@@ -35,7 +36,7 @@ When('I add the product', function () {
 });
 
 Then('the product is created', function () {
-  
+
   return expect(actions.waitForElement(viewProductPage.productName(this.product))).to.eventually.be.true;
 
 });
