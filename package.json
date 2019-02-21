@@ -4,7 +4,7 @@
   "description": "Safebear Test Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test": "protractor ./test/pro-cuke.conf.js"
+    "test": "protractor ./test/protractor.conf.js"
   },
   "repository": {
     "type": "git",
