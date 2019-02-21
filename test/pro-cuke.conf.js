@@ -16,11 +16,11 @@ exports.config = {
       }],
   
       specs: [
-          'product.features/*.feature'
+          'features/*.feature'
         ],
       
         cucumberOpts: {
-          require: 'product.features/steps/*.steps.js',
+          require: 'features/step_definitions/*.steps.js',
           tags: false,
           format: 'json:.tmp/results.json',
           profile: false,
