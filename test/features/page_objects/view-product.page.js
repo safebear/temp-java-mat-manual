@@ -1,16 +1,17 @@
 /**
- * Page Object for the 'add product' page
+ * Page Object for the 'view product' page
  * @constructor
  */
-var AddProductPage = function(){
+var ViewProductPage = function(){
 
     /**
-     * Elements on the page
+     * Used to create the locator for the Product element (we don't know what our product name will be)
+     * @param {object} product
+     * @returns {ElementFinder} element
      */
-    this.productName = $('#mat-input-0');
-    this.productDescription = $('#mat-input-1');
-    this.productPrice = $('#mat-input-2');
-    this.submitButton = $('[type=submit]');
+    this.productName = function(product){
+        return element(by.cssContainingText('h2', product.name));
+    }
 
 };
-module.exports = new AddProductPage();
+module.exports = new ViewProductPage();
