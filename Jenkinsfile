@@ -14,7 +14,7 @@ pipeline {
 
         stage('Start Selenium Server') {
             steps {
-                bat "npx webdriver-manager start"
+                bat "START /B npx webdriver-manager start"
             }
         }
 
