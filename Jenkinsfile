@@ -12,6 +12,12 @@ pipeline {
             }    
         }
 
+        stage('Start Selenium Server') {
+            steps {
+                bat "npx webdriver-manager start"
+            }
+        }
+
         stage('Run Acceptance Tests') {
             steps {
                 bat "npm test"

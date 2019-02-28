@@ -9,7 +9,7 @@ exports.config = {
     },
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
-    baseUrl: 'http://localhost:8080/',
+    baseUrl: 'http://automate.safebear.co.uk:8080/',
 
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),

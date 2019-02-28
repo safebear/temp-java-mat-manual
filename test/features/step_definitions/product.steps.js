@@ -12,6 +12,10 @@ chai.use(chaiAsPromised);
 
 setWorldConstructor(CustomWorld);
 
+// For slow websites
+var {setDefaultTimeout} = require('cucumber');
+setDefaultTimeout(60 * 1000);
+
 // Cucumber before 'hook'
 Before(function() {
   this.openWebsite()
