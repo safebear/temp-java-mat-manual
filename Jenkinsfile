@@ -12,15 +12,9 @@ pipeline {
             }    
         }
 
-        stage('Start Selenium Server') {
+        stage('Start Selenium and Run Acceptance Tests') {
             steps {
-                bat "START /B npx webdriver-manager start"
-            }
-        }
-
-        stage('Run Acceptance Tests') {
-            steps {
-                bat "npm test"
+                bat "START /B npx webdriver-manager start && npm test"
         }
         post {
             always {
